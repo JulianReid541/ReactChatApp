@@ -4,8 +4,8 @@ import firestore from 'firebase/firestore'
 const settings = {timestampsInSnapshots: true};
 
 const config = {
-    projectID: process.env.REACT_APP_PROJECT_ID,
-    apiKey: process.env.REACT_APP_APIKEY,
+    projectId: 'reactchat-28cb5',
+    apiKey: 'AIzaSyAi1BGx1MfYinJ5AanJO0Ij88pdAwivW3o',
     databaseURL: 'https://reactchat-28cb5.firebaseio.com'
 };
 
