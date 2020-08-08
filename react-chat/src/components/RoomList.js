@@ -50,7 +50,7 @@ function RoomList() {
         chat.roomname = roomname;
         chat.nickname = nickname;
         chat.date = Moment(new Date()).format('DD/MM/YYYY HH:mm:ss');
-        chat.message = `${nickname} enter the room`;
+        chat.message = `${nickname} entered the room`;
         chat.type = 'join';
         const newMessage = firebase.database().ref('chats/').push();
         newMessage.set(chat);
