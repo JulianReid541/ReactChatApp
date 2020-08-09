@@ -75,7 +75,7 @@ function ChatRoom(props) {
         const chat = newchat;
         chat.roomname = roomname;
         chat.nickname = nickname;
-        chat.date = Moment(new Date()).format('DD/MM/YYYY HH:mm:ss');
+        chat.date = Moment(new Date()).format('DD/MM/YYYY hh:mm:ss');
         chat.type = 'message';
         const newMessage = firebase.database().ref('chats/').push();
         newMessage.set(chat);
@@ -144,7 +144,7 @@ function ChatRoom(props) {
                                             <span className="ChatContentCenter">{item.message}</span>
                                         </div>:
                                         <div className="ChatMessage">
-                                            <div className={`${item.nickname === nickname? "RightBubble":"LeftBubble"}`}>
+                                            <div className={`${item.nickname === nickname ? "RightBubble":"LeftBubble"}`}>
                                             {item.nickname === nickname ? 
                                                 <span className="MsgName">Me</span>:<span className="MsgName">{item.nickname}</span>
                                             }

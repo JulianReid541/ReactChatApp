@@ -29,7 +29,7 @@ function AddRoom() {
                 return (
                     <div>
                         <Alert color="primary">
-                            Room name already exist!
+                            Room name already exists!
                         </Alert>
                     </div>
                 );
